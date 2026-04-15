@@ -1,0 +1,73 @@
+/* Fuente base */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+  background-color: #2e7d32;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* Carrusel */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+/* Cards */
+.card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+}
+
+.card-body {
+  background-color: #f5f5dc;
+}
+
+/* Sección misión y valores */
+section h2 {
+  color: #2e7d32;
+  margin-bottom: 1.5rem;
+}
+
+/* Formulario */
+form label {
+  font-weight: bold;
+}
+
+form button {
+  background-color: #81c784;
+  border: none;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #2e7d32;
+  color: #ffffff;
+}
+
+/* Footer */
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
