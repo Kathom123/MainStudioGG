@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Huerto Feliz - Jardinería</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
@@ -22,7 +22,7 @@
       <div class="carousel-inner">
         <!-- Servicio 1 -->
         <div class="carousel-item active">
-          <img src="imagenes/corte_pasto.jpg" class="d-block w-100" alt="Corte de pasto">
+          <img src="Imagenes/corte_pasto.jpg" class="d-block w-100" alt="Corte de pasto">
           <div class="carousel-caption bg-dark bg-opacity-50">
             <h5>Corte de pasto</h5>
             <p>Precio base: $20.000 (varía según requerimientos)</p>
@@ -30,7 +30,7 @@
         </div>
         <!-- Servicio 2 -->
         <div class="carousel-item">
-          <img src="imagenes/poda_arboles.jpg" class="d-block w-100" alt="Poda de árboles">
+          <img src="Imagenes/poda_arboles.jpeg" class="d-block w-100" alt="Poda de árboles">
           <div class="carousel-caption bg-dark bg-opacity-50">
             <h5>Poda de árboles</h5>
             <p>Precio base: $30.000</p>
@@ -38,7 +38,7 @@
         </div>
         <!-- Servicio 3 -->
         <div class="carousel-item">
-          <img src="imagenes/jardineria.jpg" class="d-block w-100" alt="Jardinería general">
+          <img src="Imagenes/jardineria.jpg" class="d-block w-100" alt="Jardinería general">
           <div class="carousel-caption bg-dark bg-opacity-50">
             <h5>Jardinería en general</h5>
             <p>Precio base: $25.000</p>
@@ -54,5 +54,99 @@
     </div>
   </section>
 
+<!-- Historia -->
+  <section class="container my-5">
+    <h2 class="text-center">Nuestra Historia</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="Imagenes/historia.jpg" class="card-img-top" alt="Historia">
+          <div class="card-body">
+            <p>Más de 10 años embelleciendo jardines en Santiago.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Testimonios -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="Imagenes/cliente1.jpg" class="card-img-top" alt="Cliente feliz">
+          <div class="card-body">
+            <p>"Excelente servicio, mi jardín luce espectacular." - María</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="Imagenes/cliente2.jpg" class="card-img-top" alt="Cliente feliz">
+          <div class="card-body">
+            <p>"Profesionales y puntuales, muy recomendados." - Juan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Información de la empresa -->
+  <section class="container my-5">
+    <h2 class="text-center">Nuestra Misión y Valores</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="Imagenes/mision.jpeg" class="img-fluid" alt="Misión">
+        <p>Misión: Embellecer y cuidar los espacios verdes de nuestros clientes.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="Imagenes/valores.jpeg" class="img-fluid" alt="Valores">
+        <p>Valores: Compromiso, responsabilidad y respeto por la naturaleza.</p>
+      </div>
+    </div>
+    <div class="mt-4">
+      <h5>Ubicación</h5>
+      <iframe src="https://www.google.com/maps/embed?..."></iframe>
+      <p>Correo: contacto@huertofeliz.cl</p>
+    </div>
+  </section>
+
+  <!-- Formulario de contacto -->
+  <section class="container my-5">
+    <h2 class="text-center">Contáctanos</h2>
+    <form id="contactForm" class="row g-3">
+      <div class="col-md-6">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" required>
+      </div>
+      <div class="col-md-6">
+        <label for="correo" class="form-label">Correo</label>
+        <input type="email" class="form-control" id="correo" required>
+      </div>
+      <div class="col-md-6">
+        <label for="telefono" class="form-label">Teléfono</label>
+        <input type="tel" class="form-control" id="telefono" required>
+      </div>
+      <div class="col-12">
+        <label for="consulta" class="form-label">Consulta</label>
+        <textarea class="form-control" id="consulta" rows="4" required></textarea>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-success">Enviar</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-3">
+    <p>Teléfono: +56 9 1234 5678 | Redes sociales: @HuertoFeliz</p>
+    <p>Desarrollado por Bruno Benjamín Muñoz Matus</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    //Validación del formulario
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      if (!this.checkValidity()) {
+        e.preventDefault();
+        alert('Por favor, complete todos los campos.');
+      }
+    });
+  </script>
 </body>
 </html>
